@@ -526,28 +526,28 @@
 
         default_layer {
             bindings = <
-                          &kp F       &kp A &kp R       &kp W &kp P 
-                          &kp O       &kp E &kp H       &kp T &kp D 
-                          &kp U       &kp I &kp N       &kp S &kp Y 
-                &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
+                          &kp F       &kp A &kp R       &kp W &kp P &kp F       &kp A &kp R       &kp W &kp P 
+                          &kp O       &kp E &kp H       &kp T &kp D  &kp F       &kp A &kp R       &kp W &kp P
+                          &kp U       &kp I &kp N       &kp S &kp Y  &kp F       &kp A &kp R       &kp W &kp P
+                &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT &kp F       &kp A &kp R       &kp W &kp P
             >;
         };
 
         number_layer {
             bindings = <
-                            &kp MINUS   &kp N7 &kp N8     &kp N9 &none
-                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp ASTERISK
-                            &kp N0      &kp N1 &kp N2     &kp N3 &none
-                &kp SPACE   &to DEFAULT        &to SYMBOL        &trans       &trans
+                            &kp MINUS   &kp N7 &kp N8     &kp N9 &none &trans       &trans  &trans       &trans &trans
+                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp ASTERISK &trans       &trans  &trans       &trans &trans
+                            &kp N0      &kp N1 &kp N2     &kp N3 &none   &trans &trans  &trans   &trans &trans
+                &kp SPACE   &to DEFAULT        &to SYMBOL        &trans       &trans  &trans       &trans  &trans       &trans &trans
             >;
         }; 
 
         symbol_layer {
             bindings = <
-                          &kp QUESTION      &kp AMPERSAND   &kp ASTERISK         &kp COLON        &kp SEMICOLON
-                          &kp SLASH         &kp EXCLAMATION &kp MINUS            &kp AT           &kp UNDERSCORE
-                          &kp DOUBLE_QUOTES &kp LESS_THAN   &kp LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE 
-                &kp SPACE &to NUMBER                        &to DEFAULT                           &trans         &trans
+                          &kp QUESTION      &kp AMPERSAND   &kp ASTERISK         &kp COLON        &kp SEMICOLON  &trans       &trans  &trans       &trans &trans
+                          &kp SLASH         &kp EXCLAMATION &kp MINUS            &kp AT           &kp UNDERSCORE  &trans       &trans  &trans       &trans &trans
+                          &kp DOUBLE_QUOTES &kp LESS_THAN   &kp LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE   &trans       &trans  &trans       &trans &trans
+                &kp SPACE &to NUMBER          &to DEFAULT          &trans     &trans  &trans       &trans  &trans       &trans &trans
             >;
         }; 
         
@@ -562,10 +562,10 @@
 
         lock_layer {
             bindings = <
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                &none &none       &none       &none       &none
+                      &none &none &none &none &none &none &none &none &none &none 
+                      &none &none &none &none &none &none &none &none &none &none 
+                      &none &none &none &none &none &none &none &none &none &none 
+                &none &none       &none       &none       &none &none &none &none &none &none 
             >;
         };
     };

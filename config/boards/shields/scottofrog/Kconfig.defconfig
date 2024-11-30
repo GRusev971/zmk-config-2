@@ -1,6 +1,6 @@
-if SHIELD_40KEY
+if SHIELD_SCOTTOFROG
 
 config ZMK_KEYBOARD_NAME
-    default "40Key"
+    default "ScottoFrog"
 
 endif
